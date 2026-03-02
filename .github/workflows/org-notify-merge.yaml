@@ -13,5 +13,5 @@ jobs:
           curl -X POST \
             -H "Authorization: Bearer ${{ secrets.DOWNSTREAMPAT }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/org/mock-repo-downstream/dispatches \
+            https://api.github.com/repos/dginev/mock-repo-downstream/dispatches \
             -d '{"event_type":"repo-upstream-updated","client_payload":{"branch":"${{ github.ref_name }}"}}'
